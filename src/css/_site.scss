@@ -15,7 +15,7 @@ a {
 
 .top-background {
     background: url(https://farm8.staticflickr.com/7424/13894208380_f61febd39f_o.jpg) center top no-repeat;
-    background-size: cover;
+    background-size: auto;
     height: 600px;
     position: absolute;
     width: 100%;
@@ -38,13 +38,13 @@ a {
 }
 
 #wrapper {
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 79%, rgba(255,255,255,0.83) 85%, rgba(255,255,255,0) 100%, rgba(237,237,237,0) 300px, rgba(243,243,243,0.94) 580px);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(18%,rgba(255,255,255,1)), color-stop(79%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,0.83)), color-stop(100%,rgba(255,255,255,0)), color-stop(300px,rgba(237,237,237,0)), color-stop(580px,rgba(243,243,243,0.94)));
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,1) 79%,rgba(255,255,255,0.83) 85%,rgba(255,255,255,0) 100%,rgba(237,237,237,0) 300px,rgba(243,243,243,0.94) 580px);
-    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,1) 79%,rgba(255,255,255,0.83) 85%,rgba(255,255,255,0) 100%,rgba(237,237,237,0) 300px,rgba(243,243,243,0.94) 580px);
-    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,1) 79%,rgba(255,255,255,0.83) 85%,rgba(255,255,255,0) 100%,rgba(237,237,237,0) 300px,rgba(243,243,243,0.94) 580px);
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,1) 79%,rgba(255,255,255,0.83) 85%,rgba(255,255,255,0) 100%,rgba(237,237,237,0) 300px,rgba(243,243,243,0.94) 580px);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f0f3f3f3',GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 18%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 0.83) 85%, rgba(255, 255, 255, 0) 100%, rgba(237, 237, 237, 0) 300px, rgba(243, 243, 243, 0.94) 580px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(18%, rgba(255, 255, 255, 1)), color-stop(79%, rgba(255, 255, 255, 1)), color-stop(85%, rgba(255, 255, 255, 0.83)), color-stop(100%, rgba(255, 255, 255, 0)), color-stop(300px, rgba(237, 237, 237, 0)), color-stop(580px, rgba(243, 243, 243, 0.94)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 18%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 0.83) 85%, rgba(255, 255, 255, 0) 100%, rgba(237, 237, 237, 0) 300px, rgba(243, 243, 243, 0.94) 580px);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 18%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 0.83) 85%, rgba(255, 255, 255, 0) 100%, rgba(237, 237, 237, 0) 300px, rgba(243, 243, 243, 0.94) 580px);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 18%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 0.83) 85%, rgba(255, 255, 255, 0) 100%, rgba(237, 237, 237, 0) 300px, rgba(243, 243, 243, 0.94) 580px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 18%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 0.83) 85%, rgba(255, 255, 255, 0) 100%, rgba(237, 237, 237, 0) 300px, rgba(243, 243, 243, 0.94) 580px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#f0f3f3f3', GradientType=0);
     padding-bottom: 20%;
     position: relative;
     overflow: hidden;
@@ -57,6 +57,18 @@ a {
 
 h1, h2, h3 {
     color: #555;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0.4em 0 0.5em 0;
+    text-align: center;
+}
+
+.expertises {
+    text-align: center;
+    font-size: 26px;
 }
 
 h2 {
@@ -137,7 +149,10 @@ p, ul, li {
         border-width: 15px;
         background: url(../img/background.jpg) center bottom no-repeat;
     }
-    .content-competence, .content-experience {
+    .top-background {
+        background-size: cover;
+    }
+        .content-competence, .content-experience {
         padding: 0 50px;
     }
 

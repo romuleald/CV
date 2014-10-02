@@ -184,7 +184,7 @@ module.exports = function (grunt) {
         });
     grunt.registerTask('deploy', 'Deploys files', ['clean', 'copy:main']);
     grunt.registerTask('build', "Builds the application.",
-        ['clean', 'copy:main', 'concat', 'uglify', 'sass', 'cssmin', 'nunjucks', 'copy:krypton' ]);
+        ['clean', 'copy:main', 'concat', 'uglify', 'sass', 'cssmin', 'nunjucks']);
     grunt.registerTask('buildprod', "Builds the application.",
-        ['clean', 'copy:main', 'concat', 'uglify', 'sass', 'cssmin', 'nunjucks', 'compress', 'copy:krypton' ]);
+        ['clean', 'copy:main', 'concat', 'uglify', 'sass', 'cssmin', 'nunjucks', 'compress']);
 };

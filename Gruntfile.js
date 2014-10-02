@@ -43,29 +43,7 @@ module.exports = function (grunt) {
                     {expand: true, cwd: pathsrc + pathpie, src: ['**'], dest: pathbuild + pathpie}
 //                    {expand: true, cwd: pathcss + pathico, src: ['**'], dest: pathbuild + pathcss + pathico}
                 ]
-            },
-            krypton: {
-                src: ['build/**'],
-                dest: 'z:/cap/'
             }
-        },
-        fastWatch: {
-            cwd: {
-                dir: '.',
-                ignoreSubDir: ['.git', '.gitignore', 'node_modules', 'build'],
-                trigger: {
-                    html: {
-                        care: ['.html'],
-                        tasks: ["nunjucks"]
-                    },
-                    css: {
-                        care: ['.sass'],
-                        tasks: ['sass']}
-
-                }
-
-            }
-
         },
         watch: {
             JSlib: {
@@ -95,6 +73,14 @@ module.exports = function (grunt) {
             nunjucks: {
                 files: 'src/**/*.html',
                 tasks: ['nunjucks'],
+                options: {
+                    livereload: true
+                }
+
+            },
+            medias: {
+                files: 'src/img/**',
+                tasks: ['copy:main'],
                 options: {
                     livereload: true
                 }

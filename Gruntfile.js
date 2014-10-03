@@ -64,7 +64,7 @@ module.exports = function (grunt) {
             },
             sass: {
                 // We watch and compile sass files as normal but don't live reload here
-                files: [pathsrc + pathcss + '*.scss'],
+                files: [pathsrc + pathcss + '**/*.scss'],
                 tasks: ['sass'],
                 options: {
                     debounceDelay: 50

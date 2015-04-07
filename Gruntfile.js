@@ -177,7 +177,6 @@ module.exports = function (grunt) {
 
 
     // REGISTER TAKS
-    grunt.registerTask('default', ['handlebars']);
     grunt.registerTask('clean',
         'Deletes the working folder and its contents', function () {
             grunt.file.delete(pathbuild, {force: true});

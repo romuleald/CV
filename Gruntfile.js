@@ -30,6 +30,34 @@ module.exports = function (grunt) {
      grunt.loadNpmTasks('grunt-sass');
      */
 
+    var preprocessData = function (data) {
+        var page = this.src[0];
+        var lang = this.orig.lang;
+        return data[lang];
+    };
+    var oI18n = grunt.file.readJSON('src/i18n/i18n.json');
+    var nunjucksoption = {
+        options: {
+            preprocessData: preprocessData,
+            data: grunt.file.readJSON('src/i18n/i18n.json')
+        }
+    };
+    for (var label in oI18n) {
+        nunjucksoption[label] = {
+            files: [
+                {
+                    expand: true,
+                    cwd: pathsrc,
+                    src: 'index.html',
+                    dest: pathbuild,
+                    ext: '-' +label +'.html',
+                    lang: label
+                }
+            ]
+        }
+    }
+
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -71,7 +99,7 @@ module.exports = function (grunt) {
                 }
             },
             nunjucks: {
-                files: 'src/**/*.html',
+                files: pathsrc + '**/*.html',
                 tasks: ['nunjucks'],
                 options: {
                     livereload: true
@@ -79,7 +107,7 @@ module.exports = function (grunt) {
 
             },
             medias: {
-                files: 'src/img/**',
+                files: pathsrc + '/img/**',
                 tasks: ['copy:main'],
                 options: {
                     livereload: true
@@ -89,7 +117,7 @@ module.exports = function (grunt) {
             livereload: {
                 // Here we watch the files the sass task will compile to
                 // These files are sent to the live reload server after sass compiles to them
-                options: { livereload: true },
+                options: {livereload: true},
                 files: [pathbuild + '**/*']
             }
         },
@@ -108,26 +136,7 @@ module.exports = function (grunt) {
                 ]
             }
         },
-        nunjucks: {
-            options: {
-                truc: function () {
-                    return Math.random()
-                },
-                data: {
-                }
-            },
-            render: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: pathsrc,
-                        src: "*.html",
-                        dest: pathbuild,
-                        ext: ".html"
-                    }
-                ]
-            }
-        },
+        nunjucks: nunjucksoption,
         imagemin: {                        // Task
             dynamic: {                     // Another target
                 files: [

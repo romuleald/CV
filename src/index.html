@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Antoine Sanchez - Développeur Interface Utilisateur</title>
+    <title>{{ metaTitle }}</title>
     <link rel="stylesheet" href="css/all.css" type="text/css" media="screen"/>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
-    <meta name="description" content="Curriculum vitæ d'Antoine Sanchez, développeur d'interface utilisateur"/>
+    <meta name="description" content="{{ metaDesc }}"/>
     <meta charset="utf-8">
 </head>
 <body id="cvasanchez">
@@ -15,9 +15,11 @@
     <div id="site" class="page-structure blk-c">
         <!-- head -->
         <div class="header h-card">
-            <h1>Développeur Interface Utilisateur</h1>
+            {{ lang }}
 
-            <p class="expertises p-note">Lead technique / HTML–CSS–JS / Optimisation performances / Accessibilité / Référencement</p>
+            <h1>{{ mainTitle }} </h1>
+
+            <p class="expertises p-note">{{ mainDesc }}</p>
         </div>
 
         <div class="line intro">
@@ -156,6 +158,7 @@
                                     Regex,
                                     NodeJS,
                                     Websocket,
+                                    Web Workers,
                                     Grunt,
                                     Gulp,
                                     Live reload,

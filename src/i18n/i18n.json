@@ -3,12 +3,354 @@
     "metaTitle": "Antoine Sanchez - Développeur Interface Utilisateur",
     "metaDesc": "Curriculum vitæ d'Antoine Sanchez, développeur d'interface utilisateur",
     "mainTitle": "Développeur Interface Utilisateur",
-    "mainDesc": "Lead technique / HTML–CSS–JS / Optimisation performances / Accessibilité"
+    "mainDesc": "Lead technique / HTML–CSS–JS / Optimisation performances / Accessibilité",
+    "portraitAlt": "Votre serviteur",
+    "yearOld": "ans",
+    "jobLabels": "Architecture - Performance - Ergonomie",
+    "photoCredit": "Crédit photo",
+    "jobTitle": "Expérience",
+    "jobs": [
+      {
+        "title": "Publicis-Modem - Senior développeur Front-End",
+        "time": "2010-…",
+        "desc": [
+          "Architecture framework d'intégration CSS/JS",
+          "Réalisation de prototypes HTML5/CSS3",
+          "Évaluations techniques",
+          "Référent technique",
+          "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>"
+        ]
+      },
+      {
+        "title": "Fullsix - Développeur Front-End",
+        "time": "2008-2010",
+        "desc": [
+          "Architecture framework CSS Objet optimisé pour CMS",
+          "Étude de performance de page HTML/CSS/JS",
+          "Implication dans des méthodologies agiles",
+          "Évaluations de faisabilité",
+          "Time tracking",
+          "QA testing"
+        ]
+      },
+      {
+        "title": "Fnac.com - Développeur Front-End",
+        "time": "2007-2008",
+        "desc": [
+          "Intégration de la nouvelle charte graphique de fnac.com",
+          "Développement d'interface utilisateur javascript correctement dégradée pour l'accessibilité",
+          "Référencement (étude + application dans le code)",
+          "Travail en équipe avec les développeurs .NET/C# pour faciliter l'intégration",
+          "Mise en place d'un système d'un serveur SVN pour les mises en prod des éléments front-end"
+        ]
+      },
+      {
+        "title": "Stockho - Intégrateur",
+        "time": "2006-2007",
+        "desc": [
+          "Intégration : intégration de pages aux standards du W3C",
+          "Javascript : créations de scripts modulables, menus dynamiques",
+          "Ergonomie : menus dits « DHTML » ergonomiques"
+        ]
+      },
+      {
+        "title": "Eurochallenges - Webmaster",
+        "time": "2005-2006",
+        "desc": [
+          "Webdesign : intégration et gestion d'un design complexe en XHTML/CSS aux standards W3C",
+          "Référencement : optimisation sur Google, MSN et Yahoo! (première page ou première position sur des mots‑clefs concurrentiels)",
+          "Développement : supervision des scripts PHP avec l'équipe de développement (mise en place, optimisation)",
+          "Graphisme : supervision avec les graphistes des découpes des maquettes pour optimiser le poids et le nombre d'images",
+          "Analytique : analyse de statistiques (Analytics, Xiti, logs bruts - Suivi de conversion et R.O.I.)",
+          "Serveur : mise à jour, tâches crons, scripts exécutables (emailing, miroring [Rsynch], traitements automatisés de fichiers)",
+          "Emailing : envoi de newsletters sur plus de 800 000 e‑mails, encodage des images, conformité aux anti-spams, filtrage des e‑mails de retour",
+          "Marketing : optimisation des cheminements utilisateurs",
+          "Outils collaboratifs : gestion d'outils de communication internes (Wiki, forum, bloc-notes partagé)",
+          "Informatique : montage de serveurs rackables, raid5, NAS, baies (serveurs et brassage), switch niveau 2, lecteur de bandes (LTO), téléphonie IP"
+        ]
+      }
+    ],
+    "skillTitle": "Compétence",
+    "skills": [
+      {
+        "title": "Javascript",
+        "desc": [
+          "Événement",
+          "Développement structuré",
+          "Framework : jQuery, Mootools, BackboneJS"
+        ]
+      },
+      {
+        "title": "CSS",
+        "desc": [
+          "Framework CSS",
+          "Sass",
+          "CSS3/Mobile",
+          "Multi-opérabilité"
+        ]
+      }
+    ],
+    "skills2": [
+      {
+        "title": "Développement",
+        "desc": [
+          "Versionning : GIT, Mercurial, TFS, SVN",
+          "NodeJS, Grunt/Gulp [concat, sass, uglify, compress, copy, etc…]",
+          "Task tracking : Jira, Trac, Youtrack, Redmine",
+          "PHPStorm, <a href=\"https://github.com/romuleald\">Github</a>",
+          "StyleGuide"
+        ]
+      },
+      {
+        "title": "R&amp;D",
+        "desc": [
+          "Mobile",
+          "Ergonomie",
+          "Performance",
+          "Nouvelles API"
+        ]
+      }
+    ],
+    "keywords": {
+      "title": "Mots clefs",
+      "desc": [
+        "HTML",
+        "HTML5",
+        "CSS",
+        "CSS3",
+        "Sass/scss",
+        "Less",
+        "Animation",
+        "UX",
+        "JS",
+        "Event",
+        "Templating",
+        "Promise()",
+        "Regex",
+        "NodeJS",
+        "Websocket",
+        "Web Workers",
+        "Grunt",
+        "Gulp",
+        "Live reload",
+        "API",
+        "Apache",
+        "Nginx",
+        "REST",
+        "Coding",
+        "Code-review",
+        "Pair-programming",
+        "GIT",
+        "Shell",
+        "PHPStorm",
+        "Photoshop",
+        "Task tracking",
+        "Agility",
+        "SEO",
+        "Accessibility",
+        "Code reuse",
+        "Optimisation (rendering, code, tools, human)",
+        "Windows",
+        "Linux",
+        "Lead",
+        "Back-end friendly",
+        "Bad jokes"
+      ]
+    },
+    "older": {
+      "title": "Par le passé",
+      "desc": [
+        "A.R.D.E.L. - Câbleur, dessinateur industriel [Vedène]",
+        "Decibel - Électrotechnicien [Andorre-la-Vieille]",
+        "Néo Tokyo - Vendeur [Avignon]",
+        "Thorn Bikes - Mécanicien motocycle [Carpentras]"
+      ]
+    },
+    "others": {
+      "title": "Autres",
+      "desc": [
+        "Permis B, A",
+        "Autodidacte",
+        "Photo : <a href=\"http://galerie.asanchez.fr/\">galerie</a>, <a href=\"http://www.flickr.com/photos/romuald/\">flickr</a>",
+        "Passions : moto, photographie argentique, informatique, bricolage/réparation/construction, sport, nature, montagne, coin perdu…"
+      ]
+    }
   },
   "EN": {
     "metaTitle": "Antoine Sanchez - User Interface Developer",
     "metaDesc": "Antoine Sanchez resume, user interface developer",
     "mainTitle": "User Interface Developer",
-    "mainDesc": "Technical Lead / HTML–CSS–JS / Performances optimisation  / Accessibility"
+    "mainDesc": "Technical Lead / HTML–CSS–JS / Performances optimisation  / Accessibility",
+    "portraitAlt": "Votre serviteur",
+    "yearOld": "year old",
+    "jobLabels": "Architecture - Performance - Ergonomie",
+    "photoCredit": "Photo credit",
+    "jobTitle": "Expérience",
+    "jobs": [
+      {
+        "title": "Publicis-Modem - Senior développeur Front-End",
+        "time": "2010-…",
+        "desc": [
+          "Architecture framework d'intégration CSS/JS",
+          "Réalisation de prototypes HTML5/CSS3",
+          "Évaluations techniques",
+          "Référent technique",
+          "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>"
+        ]
+      },
+      {
+        "title": "Fullsix - Développeur Front-End",
+        "time": "2008-2010",
+        "desc": [
+          "Architecture framework CSS Objet optimisé pour CMS",
+          "Étude de performance de page HTML/CSS/JS",
+          "Implication dans des méthodologies agiles",
+          "Évaluations de faisabilité",
+          "Time tracking",
+          "QA testing"
+        ]
+      },
+      {
+        "title": "Fnac.com - Développeur Front-End",
+        "time": "2007-2008",
+        "desc": [
+          "Intégration de la nouvelle charte graphique de fnac.com",
+          "Développement d'interface utilisateur javascript correctement dégradée pour l'accessibilité",
+          "Référencement (étude + application dans le code)",
+          "Travail en équipe avec les développeurs .NET/C# pour faciliter l'intégration",
+          "Mise en place d'un système d'un serveur SVN pour les mises en prod des éléments front-end"
+        ]
+      },
+      {
+        "title": "Stockho - Intégrateur",
+        "time": "2006-2007",
+        "desc": [
+          "Intégration : intégration de pages aux standards du W3C",
+          "Javascript : créations de scripts modulables, menus dynamiques",
+          "Ergonomie : menus dits « DHTML » ergonomiques"
+        ]
+      },
+      {
+        "title": "Eurochallenges - Webmaster",
+        "time": "2005-2006",
+        "desc": [
+          "Webdesign : intégration et gestion d'un design complexe en XHTML/CSS aux standards W3C",
+          "Référencement : optimisation sur Google, MSN et Yahoo! (première page ou première position sur des mots‑clefs concurrentiels)",
+          "Développement : supervision des scripts PHP avec l'équipe de développement (mise en place, optimisation)",
+          "Graphisme : supervision avec les graphistes des découpes des maquettes pour optimiser le poids et le nombre d'images",
+          "Analytique : analyse de statistiques (Analytics, Xiti, logs bruts - Suivi de conversion et R.O.I.)",
+          "Serveur : mise à jour, tâches crons, scripts exécutables (emailing, miroring [Rsynch], traitements automatisés de fichiers)",
+          "Emailing : envoi de newsletters sur plus de 800 000 e‑mails, encodage des images, conformité aux anti-spams, filtrage des e‑mails de retour",
+          "Marketing : optimisation des cheminements utilisateurs",
+          "Outils collaboratifs : gestion d'outils de communication internes (Wiki, forum, bloc-notes partagé)",
+          "Informatique : montage de serveurs rackables, raid5, NAS, baies (serveurs et brassage), switch niveau 2, lecteur de bandes (LTO), téléphonie IP"
+        ]
+      }
+    ],
+    "skillTitle": "Compétence",
+    "skills": [
+      {
+        "title": "Javascript",
+        "desc": [
+          "Événement",
+          "Développement structuré",
+          "Framework : jQuery, Mootools, BackboneJS"
+        ]
+      },
+      {
+        "title": "CSS",
+        "desc": [
+          "Framework CSS",
+          "Sass",
+          "CSS3/Mobile",
+          "Multi-opérabilité"
+        ]
+      }
+    ],
+    "skills2": [
+      {
+        "title": "Développement",
+        "desc": [
+          "Versionning : GIT, Mercurial, TFS, SVN",
+          "NodeJS, Grunt/Gulp [concat, sass, uglify, compress, copy, etc…]",
+          "Task tracking : Jira, Trac, Youtrack, Redmine",
+          "PHPStorm, <a href=\"https://github.com/romuleald\">Github</a>",
+          "StyleGuide"
+        ]
+      },
+      {
+        "title": "R&amp;D",
+        "desc": [
+          "Mobile",
+          "Ergonomie",
+          "Performance",
+          "Nouvelles API"
+        ]
+      }
+    ],
+    "keywords": {
+      "title": "Mots clefs",
+      "desc": [
+        "HTML",
+        "HTML5",
+        "CSS",
+        "CSS3",
+        "Sass/scss",
+        "Less",
+        "Animation",
+        "UX",
+        "JS",
+        "Event",
+        "Templating",
+        "Promise()",
+        "Regex",
+        "NodeJS",
+        "Websocket",
+        "Web Workers",
+        "Grunt",
+        "Gulp",
+        "Live reload",
+        "API",
+        "Apache",
+        "Nginx",
+        "REST",
+        "Coding",
+        "Code-review",
+        "Pair-programming",
+        "GIT",
+        "Shell",
+        "PHPStorm",
+        "Photoshop",
+        "Task tracking",
+        "Agility",
+        "SEO",
+        "Accessibility",
+        "Code reuse",
+        "Optimisation (rendering, code, tools, human)",
+        "Windows",
+        "Linux",
+        "Lead",
+        "Back-end friendly",
+        "Bad jokes"
+      ]
+    },
+    "older": {
+      "title": "Par le passé",
+      "desc": [
+        "A.R.D.E.L. - Câbleur, dessinateur industriel [Vedène]",
+        "Decibel - Électrotechnicien [Andorre-la-Vieille]",
+        "Néo Tokyo - Vendeur [Avignon]",
+        "Thorn Bikes - Mécanicien motocycle [Carpentras]"
+      ]
+    },
+    "others": {
+      "title": "Autres",
+      "desc": [
+        "Permis B, A",
+        "Autodidacte",
+        "Photo : <a href=\"http://galerie.asanchez.fr/\">galerie</a>, <a href=\"http://www.flickr.com/photos/romuald/\">flickr</a>",
+        "Passions : moto, photographie argentique, informatique, bricolage/réparation/construction, sport, nature, montagne, coin perdu…"
+      ]
+    }
   }
 }

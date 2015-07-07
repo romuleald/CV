@@ -23,11 +23,12 @@
         </div>
 
         <div class="line intro">
-            <img class="portrait u-photo" src="img/portrait.jpg" alt="Votre serviteur">
-            <div class="text">
-                <p><strong><a href="." class="p-name u-url">Antoine SANCHEZ</a></strong>, <span class="p-locality">Paris</span>, <span id="age">31</span> ans<br/> snchz.ntn —AT— gmail.com</p>
+            <img class="portrait u-photo" src="img/portrait.jpg" alt="{{ portraitAlt }}">
 
-                <h2 class="p-category">Architecture - Performance - Ergonomie</h2>
+            <div class="text">
+                <p><strong><a href="." class="p-name u-url">Antoine SANCHEZ</a></strong>, <span class="p-locality">Paris</span>, <span id="age">31</span> {{ yearOld }}<br/> snchz.ntn —AT— gmail.com</p>
+
+                <h2 class="p-category">{{ jobLabels }}</h2>
             </div>
         </div>
 
@@ -37,171 +38,80 @@
             <div class="line">
                 <div class="unit size1of2 seph">
                     <div class="content-experience">
-                        <h2 class="txt-c">Expérience</h2>
+                        <h2 class="txt-c">{{ jobtitle }}</h2>
 
                         <div class="line">
 
-                            <h3>Publicis-Modem - Senior développeur Front-End</h3>
+                            {% for job in jobs %}
+                            <h3>{{ job.title }}</h3>
 
-                            <p>2010-…</p>
+                            <p>{{ job.time }}</p>
                             <ul>
-                                <li>Architecture framework d'intégration CSS/JS, réalisation de prototypes HTML5/CSS3, évaluations techniques, référent technique</li>
-                                <li>Références :
-                                    <span title="Lead front">kenzo.com</span>,
-                                    <span title="Lead front, mention spéciale à la page story">kenzoparfums.com</span>,
-                                    <span title="Architecture - HTML5 - CSS3 – monté en 1 mois">ptitsplaisirsdhiver.mavieencouleurs.fr</span>,
-                                    bureau-vallee.fr,
-                                    <span title="webservice JSON ↔ Flash">weareplaystation.fr</span>
-                                </li>
+                                {% for item in job.desc %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
                             </ul>
-                            <h3>Fullsix - Développeur Front-End</h3>
+                            {% endfor %}
 
-                            <p>2008-2010</p>
-                            <ul>
-                                <li>Architecture framework CSS Objet optimisé pour CMS, étude de performance de page HTML/CSS/JS, implication dans des méthodologies agiles, évaluations de faisabilité, time tracking, QA testing</li>
-                                <li>Références : pmu.fr, myboox.fr, cuisine.larousse.fr, assoandco.fr, coca-cola.fr, ooshop.com, carrefour.fr, labanquepostale.fr</li>
-                            </ul>
-                            <h3>Fnac.com - Développeur Front-End</h3>
-
-                            <p>2007-2008</p>
-                            <ul>
-                                <li>Intégration de la nouvelle charte graphique de fnac.com, développement d'interface utilisateur javascript correctement dégradée pour l'accessibilité, référencement (étude + application dans le code)</li>
-                                <li>Travail en équipe avec les développeurs .NET/C# pour faciliter l'intégration, mise en place d'un système d'un serveur SVN pour les mises en prod des éléments front-end</li>
-                            </ul>
-                            <h3>Stockho - Intégrateur</h3>
-
-                            <p>2006-2007</p>
-                            <ul>
-                                <li>Intégration : intégration de pages aux standards du W3C</li>
-                                <li>Javascript : créations de scripts modulables, menus dynamiques</li>
-                                <li>Ergonomie : menus dits « DHTML » ergonomiques</li>
-                            </ul>
-                            <h3>Eurochallenges - Webmaster</h3>
-
-                            <p>2005-2006</p>
-                            <ul>
-                                <li>Webdesign : intégration et gestion d'un design complexe en XHTML/CSS aux standards W3C</li>
-                                <li>Référencement : optimisation sur Google, MSN et Yahoo! (première page ou première position sur des mots‑clefs concurrentiels)</li>
-                                <li>Développement : supervision des scripts PHP avec l'équipe de développement (mise en place, optimisation)</li>
-                                <li>Graphisme : supervision avec les graphistes des découpes des maquettes pour optimiser le poids et le nombre d'images</li>
-                                <li>Analytique : analyse de statistiques (Analytics, Xiti, logs bruts - Suivi de conversion et R.O.I.)</li>
-                                <li>Serveur : mise à jour, tâches crons, scripts exécutables (emailing, miroring [Rsynch], traitements automatisés de fichiers)</li>
-                                <li>Emailing : envoi de newsletters sur plus de 800 000 e‑mails, encodage des images, conformité aux anti-spams, filtrage des e‑mails de retour</li>
-                                <li>Marketing : optimisation des cheminements utilisateurs</li>
-                                <li>Outils collaboratifs : gestion d'outils de communication internes (Wiki, forum, bloc-notes partagé)</li>
-                                <li>Informatique : montage de serveurs rackables, raid5, NAS, baies (serveurs et brassage), switch niveau 2, lecteur de bandes (LTO), téléphonie IP</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="lastUnit">
                     <div class="content-competence">
-                        <h2 class="txt-c">Compétences</h2>
-
+                        <h2 class="txt-c">{{ skillTitle }}</h2>
                         <div class="line">
-                            <div class="unit size1of2">
-                                <h3>Javascript</h3>
-                                <ul>
-                                    <li>Événement</li>
-                                    <li>Développement structuré</li>
-                                    <li>Framework : jQuery, Mootools, BackboneJS</li>
-                                </ul>
-                            </div>
+                            {% for skill in skills %}
+                            <div class="{% if loop.last %}lastUnit{% else %}unit size1of2{% endif %}">
+                                <h3>{{ skill.title }}</h3>
 
-                            <div class="lastUnit">
-                                <h3>CSS</h3>
+                                <p>{{ skill.time }}</p>
                                 <ul>
-                                    <li lang="en">Framework CSS</li>
-                                    <li lang="en" title="node-sass">Sass</li>
-                                    <li lang="en">CSS3/Mobile</li>
-                                    <li lang="fr">Multi-opérabilité</li>
+                                    {% for itemSkill in skill.desc %}
+                                    <li>{{ itemSkill }}</li>
+                                    {% endfor %}
                                 </ul>
                             </div>
+                            {% endfor %}
                         </div>
                         <div class="line sepv">
-                            <div class="unit size1of2">
-                                <h3>Développement</h3>
+                            {% for skill2 in skills2 %}
+                            <div class="{% if loop.last %}lastUnit{% else %}unit size1of2{% endif %}">
+                                <h3>{{ skill2.title }}</h3>
+
+                                <p>{{ skill2.time }}</p>
                                 <ul>
-                                    <li lang="en">Versionning : GIT, Mercurial, TFS, SVN</li>
-                                    <li lang="en">NodeJS, Grunt/Gulp [concat, sass, uglify, compress, copy, etc…]</li>
-                                    <li lang="en">Task tracking : Jira, Trac, Youtrack, Redmine</li>
-                                    <li lang="en">PHPStorm, <a href="https://github.com/romuleald">Github</a></li>
-                                    <li lang="en">StyleGuide</li>
+                                    {% for itemSkill2 in skill2.desc %}
+                                    <li>{{ itemSkill2 }}</li>
+                                    {% endfor %}
                                 </ul>
                             </div>
-                            <div class="lastUnit">
-                                <h3 lang="en">R&amp;D</h3>
-                                <ul>
-                                    <li>Mobile</li>
-                                    <li>Ergonomie</li>
-                                    <li>Performance</li>
-                                    <li>Nouvelles <span title="Application Programming Interface" lang="en">API</span></li>
-                                </ul>
-                            </div>
+                            {% endfor %}
                         </div>
                         <div class="line sepv">
                             <div class="unit">
-                                <h3 lang="en">Keyword</h3>
-                                <p lang="en">
-                                    HTML,
-                                    HTML5
-                                    CSS,
-                                    CSS3,
-                                    Sass/scss,
-                                    Less,
-                                    Animation,
-                                    UX,
-                                    JS,
-                                    Event,
-                                    Templating,
-                                    Promise(),
-                                    Regex,
-                                    NodeJS,
-                                    Websocket,
-                                    Web Workers,
-                                    Grunt,
-                                    Gulp,
-                                    Live reload,
-                                    API,
-                                    Apache,
-                                    Nginx,
-                                    REST,
-                                    Coding,
-                                    Code-review,
-                                    Pair-programming,
-                                    GIT,
-                                    Shell,
-                                    PHPStorm,
-                                    Photoshop,
-                                    Task tracking,
-                                    Agility,
-                                    SEO,
-                                    Accessibility,
-                                    Code reuse,
-                                    Optimisation (rendering, code, tools, human),
-                                    Windows,
-                                    Linux,
-                                    Lead,
-                                    Back-end friendly,
-                                    Bad jokes
+                                <h3 lang="en">{{ keywords.title }}</h3>
+                                <p>
+                                    {% for keyword in keywords.desc %}
+                                    {{ keyword }}{% if loop.last %}{% else %},{% endif %}
+                                    {% endfor %}
                                 </p>
                             </div>
                         </div>
                         <div class="line sepv">
                             <div>
-                                <h3>Par le passé</h3>
+                                <h3>{{ older.title }}</h3>
+                                <p>{{ older.time }}</p>
                                 <ul>
-                                    <li>A.R.D.E.L. - Câbleur, dessinateur industriel [Vedène]</li>
-                                    <li>Decibel - Électrotechnicien [Andorre-la-Vieille]</li>
-                                    <li>Néo Tokyo - Vendeur [Avignon]</li>
-                                    <li>Thorn Bikes - Mécanicien motocycle [Carpentras]</li>
+                                    {% for olderItem in older.desc %}
+                                    <li>{{ olderItem }}</li>
+                                    {% endfor %}
                                 </ul>
-                                <h3>Autres</h3>
+                                <h3>{{ others.title }}</h3>
+                                <p>{{ others.time }}</p>
                                 <ul>
-                                    <li>Permis B, A</li>
-                                    <li>Autodidacte</li>
-                                    <li>Photo : <a href="http://galerie.asanchez.fr/">galerie</a>, <a href="http://www.flickr.com/photos/romuald/">flickr</a></li>
-                                    <li>Passions : moto, photographie argentique, informatique, bricolage/réparation/construction, sport, nature, montagne, coin perdu…</li>
+                                    {% for othersItem in others.desc %}
+                                    <li>{{ othersItem }}</li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
@@ -213,7 +123,7 @@
     <div class="picture-ref bottom">
         <span class="cta">O</span>
 
-        <p class="text">Crédit <a href="/">photo</a>, <a href="/">Sanchez Antoine</a></p>
+        <p class="text">{{ photoCredit }}, <a href="/">Sanchez Antoine</a></p>
     </div>
 </div>
 <script type="text/javascript">document.getElementById('age').innerHTML = Math.floor(new Date(new Date().getTime() - 433501000000) / 1000 / 60 / 60 / 24 / 365.249);</script>

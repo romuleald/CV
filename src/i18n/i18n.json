@@ -188,14 +188,14 @@
     "jobTitle": "Expérience",
     "jobs": [
       {
-        "title": "Publicis-Modem - Senior développeur Front-End",
+        "title": "Publicis-Modem - Senior Front-End developer",
         "time": "2010-…",
         "desc": [
-          "Architecture framework d'intégration CSS/JS",
-          "Réalisation de prototypes HTML5/CSS3",
-          "Évaluations techniques",
-          "Référent technique",
-          "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>"
+          "Setup architecture and framework for CSS/JS integration",
+          "HTML5/CSS3 prototype",
+          "Technical estimation",
+          "Technical referent",
+          "Improving <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a> with self created tools"
         ]
       },
       {
@@ -203,9 +203,9 @@
         "time": "2008-2010",
         "desc": [
           "Architecture framework CSS Objet optimisé pour CMS",
-          "Étude de performance de page HTML/CSS/JS",
-          "Implication dans des méthodologies agiles",
-          "Évaluations de faisabilité",
+          "Performance improving HTML/CSS/JS",
+          "Implicated in agile methodologies",
+          "Estimation of feasibility",
           "Time tracking",
           "QA testing"
         ]
@@ -214,47 +214,47 @@
         "title": "Fnac.com - Développeur Front-End",
         "time": "2007-2008",
         "desc": [
-          "Intégration de la nouvelle charte graphique de fnac.com",
-          "Développement d'interface utilisateur javascript correctement dégradée pour l'accessibilité",
-          "Référencement (étude + application dans le code)",
-          "Travail en équipe avec les développeurs .NET/C# pour faciliter l'intégration",
-          "Mise en place d'un système d'un serveur SVN pour les mises en prod des éléments front-end"
+          "Integrate the new visual identity of fnac.com",
+          "Developpe user interface with javascript still accessible",
+          "SEO (studies and coding)",
+          "Teamwork with .NET/C# architect to manage a simple integration",
+          "Install a local SVN server to make deployment easier for the front-end team"
         ]
       },
       {
         "title": "Stockho - Intégrateur",
         "time": "2006-2007",
         "desc": [
-          "Intégration : intégration de pages aux standards du W3C",
-          "Javascript : créations de scripts modulables, menus dynamiques",
-          "Ergonomie : menus dits « DHTML » ergonomiques"
+          "Integration: Coding with W3C standards",
+          "Javascript: Modulables scripts",
+          "Ergonomie: Making more usable for humans dropdown menu"
         ]
       },
       {
         "title": "Eurochallenges - Webmaster",
         "time": "2005-2006",
         "desc": [
-          "Webdesign : intégration et gestion d'un design complexe en XHTML/CSS aux standards W3C",
-          "Référencement : optimisation sur Google, MSN et Yahoo! (première page ou première position sur des mots‑clefs concurrentiels)",
-          "Développement : supervision des scripts PHP avec l'équipe de développement (mise en place, optimisation)",
-          "Graphisme : supervision avec les graphistes des découpes des maquettes pour optimiser le poids et le nombre d'images",
-          "Analytique : analyse de statistiques (Analytics, Xiti, logs bruts - Suivi de conversion et R.O.I.)",
-          "Serveur : mise à jour, tâches crons, scripts exécutables (emailing, miroring [Rsynch], traitements automatisés de fichiers)",
-          "Emailing : envoi de newsletters sur plus de 800 000 e‑mails, encodage des images, conformité aux anti-spams, filtrage des e‑mails de retour",
-          "Marketing : optimisation des cheminements utilisateurs",
-          "Outils collaboratifs : gestion d'outils de communication internes (Wiki, forum, bloc-notes partagé)",
-          "Informatique : montage de serveurs rackables, raid5, NAS, baies (serveurs et brassage), switch niveau 2, lecteur de bandes (LTO), téléphonie IP"
+          "Webdesign: intégration et gestion d'un design complexe en XHTML/CSS aux standards W3C",
+          "Référencement: optimisation sur Google, MSN et Yahoo! (première page ou première position sur des mots‑clefs concurrentiels)",
+          "Développement: supervision des scripts PHP avec l'équipe de développement (mise en place, optimisation)",
+          "Graphisme: supervision avec les graphistes des découpes des maquettes pour optimiser le poids et le nombre d'images",
+          "Analytique: analyse de statistiques (Analytics, Xiti, logs bruts - Suivi de conversion et R.O.I.)",
+          "Serveur: mise à jour, tâches crons, scripts exécutables (emailing, miroring [Rsynch], traitements automatisés de fichiers)",
+          "Emailing: envoi de newsletters sur plus de 800000 e‑mails, encodage des images, conformité aux anti-spams, filtrage des e‑mails de retour",
+          "Marketing: optimisation des cheminements utilisateurs",
+          "Outils collaboratifs: gestion d'outils de communication internes (Wiki, forum, bloc-notes partagé)",
+          "Informatique: montage de serveurs rackables, raid5, NAS, baies (serveurs et brassage), switch niveau 2, lecteur de bandes (LTO), téléphonie IP"
         ]
       }
     ],
-    "skillTitle": "Compétence",
+    "skillTitle": "Compétences",
     "skills": [
       {
         "title": "Javascript",
         "desc": [
-          "Événement",
-          "Développement structuré",
-          "Framework : jQuery, Mootools, BackboneJS"
+          "Event",
+          "Structured development",
+          "Framework: jQuery, Mootools, BackboneJS"
         ]
       },
       {
@@ -263,7 +263,7 @@
           "Framework CSS",
           "Sass",
           "CSS3/Mobile",
-          "Multi-opérabilité"
+          "Multi-operability"
         ]
       }
     ],
@@ -271,9 +271,9 @@
       {
         "title": "Développement",
         "desc": [
-          "Versionning : GIT, Mercurial, TFS, SVN",
+          "Versionning: GIT, Mercurial, TFS, SVN",
           "NodeJS, Grunt/Gulp [concat, sass, uglify, compress, copy, etc…]",
-          "Task tracking : Jira, Trac, Youtrack, Redmine",
+          "Task tracking: Jira, Trac, Youtrack, Redmine",
           "PHPStorm, <a href=\"https://github.com/romuleald\">Github</a>",
           "StyleGuide"
         ]
@@ -282,14 +282,14 @@
         "title": "R&amp;D",
         "desc": [
           "Mobile",
-          "Ergonomie",
+          "Ergonomics",
           "Performance",
-          "Nouvelles API"
+          "New API"
         ]
       }
     ],
     "keywords": {
-      "title": "Mots clefs",
+      "title": "Keywords",
       "desc": [
         "HTML",
         "HTML5",
@@ -335,21 +335,21 @@
       ]
     },
     "older": {
-      "title": "Par le passé",
+      "title": "Long time ago",
       "desc": [
-        "A.R.D.E.L. - Câbleur, dessinateur industriel [Vedène]",
-        "Decibel - Électrotechnicien [Andorre-la-Vieille]",
-        "Néo Tokyo - Vendeur [Avignon]",
-        "Thorn Bikes - Mécanicien motocycle [Carpentras]"
+        "A.R.D.E.L. - Câbleur, drafter [Vedène]",
+        "Decibel - Electrotechnicien [Andorre-la-Vieille]",
+        "Néo Tokyo - Seller [Avignon]",
+        "Thorn Bikes - Motorcycle mecanicien [Carpentras]"
       ]
     },
     "others": {
       "title": "Autres",
       "desc": [
-        "Permis B, A",
-        "Autodidacte",
-        "Photo : <a href=\"http://galerie.asanchez.fr/\">galerie</a>, <a href=\"http://www.flickr.com/photos/romuald/\">flickr</a>",
-        "Passions : moto, photographie argentique, informatique, bricolage/réparation/construction, sport, nature, montagne, coin perdu…"
+        "Car and motorcycle driving licence",
+        "Autodidact",
+        "Photo: <a href=\"http://galerie.asanchez.fr/\">gallery</a>, <a href=\"http://www.flickr.com/photos/romuald/\">flickr</a>",
+        "Passions: motorbike, film photography, IT, DIY/construction, sport, nature, mountain, lost places…"
       ]
     }
   }

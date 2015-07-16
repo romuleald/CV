@@ -18,7 +18,8 @@
           "Réalisation de prototypes HTML5/CSS3",
           "Évaluations techniques",
           "Référent technique",
-          "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>"
+          "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>",
+          "Chemistry Agency (lead), Amundi (lead), SFR (lead/solo pour le lancement de la 4G avec des robots pilotés en NodeJS), SNCF (lead/solo pour mettre un service de streaming en WiFi via un Raspberry Pi), Kenzo.com (lead), Kenzoparfums (lead)"
         ]
       },
       {
@@ -30,7 +31,8 @@
           "Implication dans des méthodologies agiles",
           "Évaluations de faisabilité",
           "Time tracking",
-          "QA testing"
+          "QA testing",
+          "Coca-Cola (lead), Asso&amp;Co (lead), Renault (dev), SFR (dev), Myboox (dev)"
         ]
       },
       {
@@ -70,7 +72,7 @@
         ]
       }
     ],
-    "skillTitle": "Compétence",
+    "skillTitle": "Compétences",
     "skills": [
       {
         "title": "Javascript",
@@ -112,7 +114,7 @@
       }
     ],
     "keywords": {
-      "title": "Mots clefs",
+      "title": "Mots-clefs",
       "desc": [
         "HTML",
         "HTML5",
@@ -172,7 +174,7 @@
         "Permis B, A",
         "Autodidacte",
         "Photo : <a href=\"http://galerie.asanchez.fr/\">galerie</a>, <a href=\"http://www.flickr.com/photos/romuald/\">flickr</a>",
-        "Passions : moto, photographie argentique, informatique, bricolage/réparation/construction, sport, nature, montagne, coin perdu…"
+        "Passions : moto, photographie argentique, informatique, bricolage/réparation/construction, sport, nature, montagne, coins perdus…"
       ]
     }
   },
@@ -181,48 +183,50 @@
     "metaDesc": "Antoine Sanchez resume, user interface developer",
     "mainTitle": "User Interface Developer",
     "mainDesc": "Technical Lead / HTML–CSS–JS / Performances optimisation  / Accessibility",
-    "portraitAlt": "Votre serviteur",
+    "portraitAlt": "My Lord?",
     "yearOld": "year old",
     "jobLabels": "Architecture - Performance - Ergonomie",
     "photoCredit": "Photo credit",
-    "jobTitle": "Expérience",
+    "jobTitle": "Experience",
     "jobs": [
       {
-        "title": "Publicis-Modem - Senior Front-End developer",
+        "title": "Publicis-Modem - Senior Front-End Developer",
         "time": "2010-…",
         "desc": [
           "Setup architecture and framework for CSS/JS integration",
           "HTML5/CSS3 prototype",
           "Technical estimation",
           "Technical referent",
-          "Improving <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a> with self created tools"
+          "Improving <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a> with self created tools",
+          "Chemistry Agency (lead), Amundi (lead), SFR (lead/solo for the launch of 4G website with robots drived by NodeJS), SNCF (lead/solo for a steaming/WiFi onboard prototype with a Raspberry Pi), Kenzo.com (lead), Kenzoparfums (lead)"
         ]
       },
       {
-        "title": "Fullsix - Développeur Front-End",
+        "title": "Fullsix - Front-End Developer",
         "time": "2008-2010",
         "desc": [
-          "Architecture framework CSS Objet optimisé pour CMS",
+          "Architecture framework CSS Objet optimized for CMS",
           "Performance improving HTML/CSS/JS",
           "Implicated in agile methodologies",
           "Estimation of feasibility",
           "Time tracking",
-          "QA testing"
+          "QA testing",
+          "Coca-Cola (lead), Asso&amp;Co (lead), Renault (dev), SFR (dev), Myboox (dev)"
         ]
       },
       {
-        "title": "Fnac.com - Développeur Front-End",
+        "title": "Fnac.com -  Front-End Developer",
         "time": "2007-2008",
         "desc": [
           "Integrate the new visual identity of fnac.com",
-          "Developpe user interface with javascript still accessible",
+          "Develope user interface with javascript still accessible",
           "SEO (studies and coding)",
           "Teamwork with .NET/C# architect to manage a simple integration",
           "Install a local SVN server to make deployment easier for the front-end team"
         ]
       },
       {
-        "title": "Stockho - Intégrateur",
+        "title": "Stockho - Integration",
         "time": "2006-2007",
         "desc": [
           "Integration: Coding with W3C standards",
@@ -247,7 +251,7 @@
         ]
       }
     ],
-    "skillTitle": "Compétences",
+    "skillTitle": "Skills",
     "skills": [
       {
         "title": "Javascript",
@@ -269,7 +273,7 @@
     ],
     "skills2": [
       {
-        "title": "Développement",
+        "title": "Development",
         "desc": [
           "Versionning: GIT, Mercurial, TFS, SVN",
           "NodeJS, Grunt/Gulp [concat, sass, uglify, compress, copy, etc…]",
@@ -283,7 +287,7 @@
         "desc": [
           "Mobile",
           "Ergonomics",
-          "Performance",
+          "Performances",
           "New API"
         ]
       }
@@ -300,6 +304,8 @@
         "Animation",
         "UX",
         "JS",
+        "ES6",
+        "Webpack",
         "Event",
         "Templating",
         "Promise()",
@@ -337,14 +343,14 @@
     "older": {
       "title": "Long time ago",
       "desc": [
-        "A.R.D.E.L. - Câbleur, drafter [Vedène]",
+        "A.R.D.E.L. - “Câbleur”, drafter [Vedène]",
         "Decibel - Electrotechnicien [Andorre-la-Vieille]",
         "Néo Tokyo - Seller [Avignon]",
-        "Thorn Bikes - Motorcycle mecanicien [Carpentras]"
+        "Thorn Bikes - Motorcycle mecanic [Carpentras]"
       ]
     },
     "others": {
-      "title": "Autres",
+      "title": "Others",
       "desc": [
         "Car and motorcycle driving licence",
         "Autodidact",

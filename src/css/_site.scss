@@ -44,6 +44,7 @@ h1 {
 .expertises {
     text-align: center;
     font-size: 26px;
+    margin: pxtoem(30,26) 0;
 }
 
 h2 {
@@ -86,18 +87,24 @@ p, ul, li {
 }
 
 .intro {
+    display: flex;
+    flex-flow: row wrap;
+    margin: pxtoem(30);
     text-align: right;
-    padding: 10px 0;
     .portrait {
+        align-self: center;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        float: right;
+        flex: 0 0 200px;
+        float: right;//compatibility
         height: 200px;
         margin-left: 20px;
         width: 200px;
     }
     .text {
-        overflow: hidden;
+        align-self: center;
+        flex: 1;
         margin-left: 10px;
+        overflow: hidden;
     }
 }
 
@@ -148,6 +155,11 @@ p, ul, li {
     }
 }
 
+@media only screen and (max-width: 900px) {
+    h2 {
+        line-height: 1.2;
+    }
+}
 @media only screen and (min-width: 1024px) {
 
     body {

@@ -18,8 +18,21 @@
           "Réalisation de prototypes HTML5/CSS3",
           "Évaluations techniques",
           "Référent technique",
+          "Programmation en binôme",
           "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>",
-          "Chemistry Agency (lead), Amundi (lead), SFR (lead/solo pour le lancement de la 4G avec des robots pilotés en NodeJS), SNCF (lead/solo pour mettre un service de streaming en WiFi via un Raspberry Pi), Kenzo.com (lead), Kenzoparfums (lead)"
+          {
+            "projects": {
+              "title": "Projets",
+              "list": {
+                "Chemistry Agency": "Lead, animations travaillées",
+                "Amundi": "Lead, grosse structure CSS",
+                "SFR": "Lead/solo pour le lancement de la 4G avec des robots pilotés en NodeJS",
+                "SNCF": "Lead/solo pour mettre un service de streaming en WiFi via un Raspberry Pi",
+                "Kenzo.com": "Lead, grosse architecture Ajax/E-commerce",
+                "Kenzoparfums": "Lead, site très graphique"
+              }
+            }
+          }
         ]
       },
       {
@@ -32,7 +45,18 @@
           "Évaluations de faisabilité",
           "Time tracking",
           "QA testing",
-          "Coca-Cola (lead), Asso&amp;Co (lead), Renault (dev), SFR (dev), Myboox (dev)"
+          {
+            "projects": {
+              "title": "Projets",
+              "list": {
+                "Coca-Cola": "Lead",
+                "Asso&amp;Co": "Lead, grosse structure CSS",
+                "Renault": "Dev",
+                "SFR": "Dev",
+                "Myboox": "Dev"
+              }
+            }
+          }
         ]
       },
       {
@@ -42,7 +66,7 @@
           "Intégration de la nouvelle charte graphique de fnac.com",
           "Développement d'interface utilisateur javascript correctement dégradée pour l'accessibilité",
           "Référencement (étude + application dans le code)",
-          "Travail en équipe avec les développeurs .NET/C# pour faciliter l'intégration",
+          "Travail en équipe avec les architectes .NET/C# pour faciliter l'intégration",
           "Mise en place d'un système d'un serveur SVN pour les mises en prod des éléments front-end"
         ]
       },
@@ -195,8 +219,21 @@
           "HTML5/CSS3 prototype",
           "Technical estimation",
           "Technical referent",
-          "Improving <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a> with self created tools",
-          "Chemistry Agency (lead), Amundi (lead), SFR (lead/solo for the launch of 4G website with robots drived by NodeJS), SNCF (lead/solo for a steaming/WiFi onboard prototype with a Raspberry Pi), Kenzo.com (lead), Kenzoparfums (lead)"
+          "Pair programming",
+          "<a href=\"https://fr.wikipedia.org/wiki/Workflow\">Workflow</a> improvement with self made tools",
+          {
+            "projects": {
+              "title": "Projects",
+              "list": {
+                "Chemistry Agency": "Lead, enhanced animations",
+                "Amundi": "Lead, large CSS structure",
+                "SFR": "Lead/solo for the launch of 4G website with robots driven by NodeJS",
+                "SNCF": "Lead/solo pour mettre for a streaming/WiFi onboard prototype with a Raspberry Pi",
+                "Kenzo.com": "Lead, large Ajax/E-commerce architecture",
+                "Kenzoparfums": "Lead, highly graphical website, especially the story section"
+              }
+            }
+          }
         ]
       },
       {
@@ -205,22 +242,33 @@
         "desc": [
           "Architecture framework CSS Objet optimized for CMS",
           "Performance improving HTML/CSS/JS",
-          "Implicated in agile methodologies",
-          "Estimation of feasibility",
+          "Involvement in agile methodologies",
+          "Feasibility studies",
           "Time tracking",
           "QA testing",
-          "Coca-Cola (lead), Asso&amp;Co (lead), Renault (dev), SFR (dev), Myboox (dev)"
+          {
+            "projects": {
+              "title": "Projects",
+              "list": {
+                "Coca-Cola": "Lead",
+                "Asso&amp;Co": "Lead",
+                "Renault": "Dev",
+                "SFR": "Dev",
+                "Myboox": "Dev"
+              }
+            }
+          }
         ]
       },
       {
         "title": "Fnac.com -  Front-End Developer",
         "time": "2007-2008",
         "desc": [
-          "Integrate the new visual identity of fnac.com",
-          "Develop user interface with javascript still accessible",
+          "Integration of the new visual identity of fnac.com",
+          "Development of user interface with a still accessible javascript ",
           "SEO (studies and coding)",
-          "Teamwork with .NET/C# architect to manage a simple integration",
-          "Install a local SVN server to make deployment easier for the front-end team"
+          "Teamwork with .NET/C# architects to manage a smarter integration",
+          "Installation of a local SVN server to make deployment easier for the front-end team"
         ]
       },
       {
@@ -229,7 +277,7 @@
         "desc": [
           "Integration: Coding with W3C standards",
           "Javascript: Modulables scripts",
-          "Ergonomics: Making dropdown menu more usable for humans"
+          "Ergonomics: Making dropdown menu more accessible"
         ]
       },
       {
@@ -242,8 +290,8 @@
           "Analytics: ROI from SEO/SEM",
           "Server: update production code, automated tasks, emailing",
           "Emailing: send large amount of e-mails (800000), anti-spam coding",
-          "Collaborative tools: Wiki, forum, shared notepad)",
-          "IT: install servers, workstations"
+          "Collaborative tools: Wiki, forum, shared notepad",
+          "IT: installation of servers, workstations"
         ]
       }
     ],
@@ -339,8 +387,8 @@
     "older": {
       "title": "Long time ago",
       "desc": [
-        "A.R.D.E.L. - “Câbleur”, drafter [Vedène]",
-        "Decibel - Electrotechnicien [Andorre-la-Vieille]",
+        "A.R.D.E.L. - Erector rigger, drafter [Vedène]",
+        "Decibel - Electrotechnician [Andorre-la-Vieille]",
         "Néo Tokyo - Seller [Avignon]",
         "Thorn Bikes - Motorcycle mecanic [Carpentras]"
       ]
@@ -348,7 +396,7 @@
     "others": {
       "title": "Others",
       "desc": [
-        "Car and motorcycle driving licence",
+        "Car and motorcycle driving licenses",
         "Autodidact",
         "Photo: <a href=\"http://galerie.asanchez.fr/\">gallery</a>, <a href=\"http://www.flickr.com/photos/romuald/\">flickr</a>",
         "Passions: motorbike, film photography, IT, DIY/construction, sport, nature, mountain, lost places…"

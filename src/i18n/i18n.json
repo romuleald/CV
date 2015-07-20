@@ -19,7 +19,7 @@
           "Évaluations techniques",
           "Référent technique",
           "Programmation en binôme",
-          "Création d'outil améliorant le <a href=\"https://fr.wikipedia.org/wiki/Workflow\">workflow</a>",
+          "Amélioration du workflow avec des outils codés main ou via des scripts d'automatisations (Grunt/Gulp)",
           {
             "projects": {
               "title": "Projets",
@@ -204,7 +204,7 @@
     "metaTitle": "Antoine Sanchez - User Interface Developer",
     "metaDesc": "Antoine Sanchez resume, user interface developer",
     "mainTitle": "User Interface Developer",
-    "mainDesc": "Technical Lead / HTML–CSS–JS / Performances optimisation  / Accessibility",
+    "mainDesc": "Technical Lead / HTML–CSS–JS / Optimization performance / Accessibility",
     "portraitAlt": "My Lord?",
     "yearOld": "year old",
     "jobLabels": "Architecture - Performance - Ergonomics",
@@ -217,9 +217,10 @@
         "desc": [
           "Setup architecture and framework for CSS/JS integration",
           "HTML5/CSS3 prototype",
-          "Technical estimation",
+          "Technical workload estimations",
           "Technical referent",
           "Pair programming",
+          "Workflow improvement via self made tools or task runner (Grunt/Gulp)",
           "<a href=\"https://fr.wikipedia.org/wiki/Workflow\">Workflow</a> improvement with self made tools",
           {
             "projects": {
@@ -241,7 +242,7 @@
         "time": "2008-2010",
         "desc": [
           "Architecture framework CSS Objet optimized for CMS",
-          "Performance improving HTML/CSS/JS",
+          "Performance improvements HTML/CSS/JS",
           "Involvement in agile methodologies",
           "Feasibility studies",
           "Time tracking",
@@ -276,7 +277,7 @@
         "time": "2006-2007",
         "desc": [
           "Integration: Coding with W3C standards",
-          "Javascript: Modulables scripts",
+          "Javascript: Modular scripts",
           "Ergonomics: Making dropdown menu more accessible"
         ]
       },

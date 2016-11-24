@@ -22,6 +22,7 @@ module.exports = function (grunt) {
     var oI18n = grunt.file.readJSON('src/i18n/i18n.json');
     var nunjucksoption = {
         options: {
+            autoescape: false,
             preprocessData: preprocessData,
             data: oI18n
         }

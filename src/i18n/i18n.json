@@ -11,7 +11,7 @@
     "jobTitle": "Expérience",
     "jobs": [
       {
-        "title": "Publicis-Modem - Senior développeur Front-End",
+        "title": "Publicis-Modem - Lead développeur Front-End",
         "time": "2010-…",
         "desc": [
           "Architecture framework d'intégration CSS/JS",
@@ -19,11 +19,15 @@
           "Évaluations techniques",
           "Référent technique",
           "Programmation en binôme",
-          "Amélioration du workflow avec des outils codés main ou via des scripts d'automatisations (Grunt/Gulp)",
+          "Amélioration du workflow avec des outils codés main ou via des scripts d'automatisations (Grunt/Webpack)",
           {
             "projects": {
               "title": "Projets",
               "list": {
+                "Groupe Bel": "Archi, architecture modulaire ES6 déclarative",
+                "Legrand.fr": "Lead, architecture modulaire",
+                "Outil interne de planning": "Architecture 100% ajax en ES6",
+                "Lucien Barrière Hôtel": "Lead, architecture modulaire",
                 "Chemistry Agency": "Lead, animations travaillées",
                 "Amundi": "Lead, grosse structure CSS",
                 "SFR": "Lead/solo pour le lancement de la 4G avec des robots pilotés en NodeJS",
@@ -50,7 +54,7 @@
               "title": "Projets",
               "list": {
                 "Coca-Cola": "Lead",
-                "Asso&amp;Co": "Lead, grosse structure CSS",
+                "Asso&Co": "Lead, grosse structure CSS",
                 "Renault": "Dev",
                 "SFR": "Dev",
                 "Myboox": "Dev"
@@ -126,7 +130,7 @@
         ]
       },
       {
-        "title": "R&amp;D",
+        "title": "R&D",
         "desc": [
           "Mobile",
           "Ergonomie",
@@ -147,6 +151,8 @@
         "Animation",
         "UX",
         "JS",
+        "ES6",
+        "Programmation déclarative",
         "Event",
         "Templating",
         "Promise()",
@@ -154,9 +160,9 @@
         "NodeJS",
         "Websocket",
         "Web Workers",
+        "Webpack",
         "Grunt",
         "Gulp",
-        "Live reload",
         "API",
         "Apache",
         "Nginx",
@@ -165,6 +171,7 @@
         "Code-review",
         "Pair-programming",
         "GIT",
+        "Gitlab",
         "Shell",
         "PHPStorm",
         "Photoshop",
@@ -212,7 +219,7 @@
     "jobTitle": "Experience",
     "jobs": [
       {
-        "title": "Publicis-Modem - Senior Front-End Developer",
+        "title": "Publicis-Modem - Lead Front-End Developer",
         "time": "2010-…",
         "desc": [
           "Setup architecture and framework for CSS/JS integration",
@@ -220,12 +227,15 @@
           "Technical workload estimations",
           "Technical referent",
           "Pair programming",
-          "Workflow improvement via self made tools or task runner (Grunt/Gulp)",
-          "<a href=\"https://fr.wikipedia.org/wiki/Workflow\">Workflow</a> improvement with self made tools",
+          "Workflow improvement via self made tools or task runner (Grunt/Webpack)",
           {
             "projects": {
               "title": "Projects",
               "list": {
+                "Groupe Bel": "Archi, ES6 declarative modular architecture",
+                "Legrand.fr": "Lead, modular architecture",
+                "Outil interne de planning": "100% ajax ES6 architecture",
+                "Lucien Barrière Hôtel": "Lead, modular architecture",
                 "Chemistry Agency": "Lead, enhanced animations",
                 "Amundi": "Lead, large CSS structure",
                 "SFR": "Lead/solo for the launch of 4G website with robots driven by NodeJS",
@@ -252,7 +262,7 @@
               "title": "Projects",
               "list": {
                 "Coca-Cola": "Lead",
-                "Asso&amp;Co": "Lead",
+                "Asso&Co": "Lead",
                 "Renault": "Dev",
                 "SFR": "Dev",
                 "Myboox": "Dev"
@@ -328,7 +338,7 @@
         ]
       },
       {
-        "title": "R&amp;D",
+        "title": "R&D",
         "desc": [
           "Mobile",
           "Ergonomics",
@@ -350,7 +360,7 @@
         "UX",
         "JS",
         "ES6",
-        "Webpack",
+        "Declarative programming",
         "Event",
         "Templating",
         "Promise()",
@@ -358,9 +368,9 @@
         "NodeJS",
         "Websocket",
         "Web Workers",
+        "Webpack",
         "Grunt",
         "Gulp",
-        "Live reload",
         "API",
         "Apache",
         "Nginx",
@@ -369,6 +379,7 @@
         "Code-review",
         "Pair-programming",
         "GIT",
+        "Gitlab",
         "Shell",
         "PHPStorm",
         "Photoshop",

@@ -1,0 +1,67 @@
+@page {
+    margin: 0.8cm 0.8cm;
+}
+
+.picture-ref, .other-lang {
+    display: none !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    * {
+        margin: 0;
+    }
+}
+
+.portrait {
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    color: #222;
+    margin: 0;
+    font: normal normal 14px/1.4 'Oxygen', 'Arial', sans-serif;
+    letter-spacing: 0.35px;
+}
+
+a, h1, h2, h3 {
+    color: #555;
+}
+
+h1 {
+    margin: 0;
+}
+
+#content h2 {
+    border-top: solid 1px;
+    padding-top: 20px;
+}
+
+#content h3 {
+    border-top: solid 1px #EEE;
+    padding-top: 15px;
+}
+
+#content > .line {
+    display: flex;
+    & > .unit {
+        margin-right: 10px;
+        flex: 1 1 auto;
+    }
+    & > .lastUnit {
+        margin-left: 10px;
+        flex: 0 1 9cm;
+    }
+}
+
+.job-item {
+    page-break-inside: avoid;
+}

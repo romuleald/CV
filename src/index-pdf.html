@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>{{ metaTitle }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print"/>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
+    <meta name="description" content="{{ metaDesc }}"/>
+    <meta charset="utf-8">
+</head>
+<body id="cvasanchez">
+<script type="text/javascript">document.body.className += 'js';</script>
+<div class="top-background"></div>
+<div id="wrapper"><!-- todo: not a good name -->
+    <div id="site" class="page-structure blk-c">
+        <!-- head -->
+        <div class="header h-card">
+            <div>
+                <h1>{{ mainTitle }} </h1>
+                <p class="expertises p-note">{{ mainDesc }}</p>
+            </div>
+            <div>
+                <img class="portrait u-photo" src="img/portrait.jpg" alt="{{ portraitAlt }}" width="400" height="400">
+            </div>
+        </div>
+
+        <div class="line intro">
+            <div class="text">
+                <p><strong><a href="." class="p-name u-url">Antoine SANCHEZ</a></strong>, <span
+                        class="p-locality">Paris</span>, <span id="age">33</span> {{ yearOld }}<br/> snchz.ntn@gmail.com
+                </p>
+
+                <h2 class="p-category">{{ jobLabels }}</h2>
+            </div>
+        </div>
+
+        <!-- center -->
+        <div id="content">
+
+            <div class="line">
+                <div class="unit size1of2 seph">
+                    <div class="content-experience">
+                        <h2 class="txt-c">{{ jobTitle }}</h2>
+
+                        <div class="line">
+                            {% for job in jobs %}
+                            <div class="job-item">
+                                <h3>{{ job.title }}</h3>
+
+                                <p>{{ job.time }}</p>
+                                <ul>
+                                    {% for item in job.desc %}
+                                    {% if item.projects %}
+                                    <li>
+                                        {{ item.projects.title }}
+                                        <ul>
+                                            {% for project, title in item.projects.list %}
+                                            <li><span class="bold">{{ project }}</span> - {{ title }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                    {% else %}
+                                    <li>{{ item }}</li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="lastUnit">
+                    <div class="content-competence">
+                        <h2 class="txt-c">{{ skillTitle }}</h2>
+
+                        <div class="line">
+                            {% for skill in skills %}
+                            <div class="{% if loop.last %}lastUnit{% else %}unit size1of2{% endif %}">
+                                <h3>{{ skill.title }}</h3>
+
+                                <p>{{ skill.time }}</p>
+                                <ul>
+                                    {% for itemSkill in skill.desc %}
+                                    <li>{{ itemSkill }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="line sepv">
+                            {% for skill2 in skills2 %}
+                            <div class="{% if loop.last %}lastUnit{% else %}unit size1of2{% endif %}">
+                                <h3>{{ skill2.title }}</h3>
+
+                                <p>{{ skill2.time }}</p>
+                                <ul>
+                                    {% for itemSkill2 in skill2.desc %}
+                                    <li>{{ itemSkill2 | safe }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById('age').innerHTML = new Date().getFullYear() - new Date(433501000000).getFullYear();
+</script>
+</body>
+</html>

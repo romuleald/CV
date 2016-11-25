@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                 {
                     expand: true,
                     cwd: pathsrc,
-                    src: 'index.html',
+                    src: '*.html',
                     dest: pathbuild,
                     ext: '-' + label + '.html',
                     lang: label
@@ -82,7 +82,7 @@ module.exports = function (grunt) {
                 files: [pathsrc + pathcss + '**/*.scss'],
                 tasks: ['sass'],
                 options: {
-                    debounceDelay: 50
+                    debounceDelay: 0
                 }
             },
             nunjucks: {
@@ -115,12 +115,18 @@ module.exports = function (grunt) {
     });
 
     var filessass = {};
-    filessass[pathbuild + pathcss + 'all.css'] = pathsrc + pathcss + 'all.scss';
+    filessass[pathbuild + pathcss + ''] = [pathsrc + pathcss + 'all.scss'];
     grunt.config('sass', {
             options: {
                 outputStyle: 'compressed'
             },
-            app: {files: filessass}
+            files: {
+                expand: true,
+                cwd: pathsrc + pathcss,
+                src: '*.scss',
+                dest: pathbuild + pathcss,
+                ext: '.css'
+            }
         }
     );
 

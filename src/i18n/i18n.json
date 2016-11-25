@@ -213,7 +213,7 @@
     "mainTitle": "User Interface Developer",
     "mainDesc": "Technical Lead / HTML–CSS–JS / Optimization performance / Accessibility",
     "portraitAlt": "My Lord?",
-    "yearOld": "year old",
+    "yearOld": "years old",
     "jobLabels": "Architecture - Performance - Ergonomics",
     "photoCredit": "Photo credit",
     "jobTitle": "Experience",
@@ -234,7 +234,7 @@
               "list": {
                 "Groupe Bel": "Archi, ES6 declarative modular architecture",
                 "Legrand.fr": "Lead, modular architecture",
-                "Outil interne de planning": "100% ajax ES6 architecture",
+                "Internal traffic planning tool": "100% ajax ES6 architecture",
                 "Lucien Barrière Hôtel": "Lead, modular architecture",
                 "Chemistry Agency": "Lead, enhanced animations",
                 "Amundi": "Lead, large CSS structure",

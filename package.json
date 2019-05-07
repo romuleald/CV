@@ -2,14 +2,18 @@
   "name": "cv",
   "version": "0.1.2",
   "scripts": {
-    "less": "lessc src/css/all.less build/css/all.css",
-    "nunjucks": "node nunjucks.js",
-    "copy-img": "cp -r src/img build/img",
-    "build": "run-p less nunjucks copy-img"
+    "less": "lessc src/css/all.less docs/css/all.css",
+    "purge": "purgecss --css docs/css/all.css --content docs/index-FR.html -o docs/css",
+    "compress": "uglifycss docs/css/all.css > docs/css/all.min.css",
+    "nunjucks": "node tools/nunjucks.js",
+    "copy-img": "cp -r src/img docs/img",
+    "build": "mkdir -p docs && run-s less purge compress && run-p nunjucks copy-img"
   },
   "devDependencies": {
     "less": "^3.9.0",
     "npm-run-all": "^4.1.5",
-    "nunjucks": "^3.2.0"
+    "nunjucks": "^3.2.0",
+    "purgecss": "^1.3.0",
+    "uglifycss": "0.0.29"
   }
 }

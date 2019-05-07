@@ -3,11 +3,11 @@
   "version": "0.1.2",
   "scripts": {
     "less": "lessc src/css/all.less docs/css/all.css",
-    "purge": "purgecss --css docs/css/all.css --content docs/index-FR.html -o docs/css",
+    "purge": "purgecss --css ./docs/css/all.css --content ./docs/index-FR.html -o ./docs/css/",
     "compress": "uglifycss docs/css/all.css > docs/css/all.min.css",
     "nunjucks": "node tools/nunjucks.js",
-    "copy-img": "cp -r src/img docs/img",
-    "build": "mkdir -p docs && run-s less purge compress && run-p nunjucks copy-img"
+    "copy-img": "cp -r ./src/img/ ./docs/img/",
+    "build": "run-s less purge compress && run-p nunjucks copy-img"
   },
   "devDependencies": {
     "less": "^3.9.0",

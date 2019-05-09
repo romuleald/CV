@@ -1,163 +1,28 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html>
 <head>
-    <title>{{ metaTitle }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="screen"/>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
-    <meta name="description" content="{{ metaDesc }}"/>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
 </head>
-<body id="cvasanchez">
-<script type="text/javascript">document.body.className += 'js';</script>
-<div class="top-background"></div>
-<div id="wrapper"><!-- todo: not a good name -->
-    <ul class="other-lang">
-        <li><a href="index-EN.html">EN</a></li>
-        <li><a href="index-FR.html">FR</a></li>
-    </ul>
-    <div id="site" class="page-structure blk-c">
-        <!-- head -->
-        <div class="header h-card">
-            {{ lang }}
-
-            <h1>{{ mainTitle }} </h1>
-
-            <p class="expertises p-note">{{ mainDesc }}</p>
-        </div>
-
-        <div class="line intro">
-            <div class="text">
-                <p><strong><a href="." class="p-name u-url">Antoine SANCHEZ</a></strong>, <span class="p-locality">Paris</span>, <span id="age">35</span> {{ yearOld }}<br/> snchz.ntn —AT— gmail.com</p>
-
-                <h2 class="p-category">{{ jobLabels }}</h2>
-            </div>
-            <img class="portrait u-photo" src="img/portrait.jpg" alt="{{ portraitAlt }}" width="400" height="400">
-        </div>
-
-        <!-- center -->
-        <div id="content">
-
-            <div class="line">
-                <div class="unit size1of2 seph">
-                    <div class="content-experience">
-                        <h2 class="txt-c">{{ jobTitle }}</h2>
-
-                        <div class="line">
-                            {% for job in jobs %}
-                            <h3>{{ job.title }}</h3>
-
-                            <p>{{ job.time }}</p>
-                            <ul>
-                                {% for item in job.desc %}
-                                {% if item.projects %}
-                                <li>
-                                    {{ item.projects.title }}
-                                    <ul>
-                                        {% for project, title in item.projects.list %}
-                                        <li><span class="bold">{{ project }}</span> - {{ title }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </li>
-                                {% else %}
-                                <li>{{ item }}</li>
-                                {% endif %}
-                                {% endfor %}
-                            </ul>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <div class="lastUnit">
-                    <div class="content-competence">
-                        <h2 class="txt-c">{{ skillTitle }}</h2>
-
-                        <div class="line">
-                            {% for skill in skills %}
-                            <div class="{% if loop.last %}lastUnit{% else %}unit size1of2{% endif %}">
-                                <h3>{{ skill.title }}</h3>
-
-                                <p>{{ skill.time }}</p>
-                                <ul>
-                                    {% for itemSkill in skill.desc %}
-                                    <li>{{ itemSkill }}</li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <div class="line sepv">
-                            {% for skill2 in skills2 %}
-                            <div class="{% if loop.last %}lastUnit{% else %}unit size1of2{% endif %}">
-                                <h3>{{ skill2.title }}</h3>
-
-                                <p>{{ skill2.time }}</p>
-                                <ul>
-                                    {% for itemSkill2 in skill2.desc %}
-                                    <li>{{ itemSkill2 | safe }}</li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <div class="line sepv">
-                            <div class="unit">
-                                <h3 lang="en">{{ keywords.title }}</h3>
-
-                                <p>
-                                    {% for keyword in keywords.desc %}
-                                    {{ keyword }}{% if loop.last %}{% else %},{% endif %}
-                                    {% endfor %}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="line sepv">
-                            <div>
-                                <h3>{{ older.title }}</h3>
-
-                                <p>{{ older.time }}</p>
-                                <ul>
-                                    {% for olderItem in older.desc %}
-                                    <li>{{ olderItem }}</li>
-                                    {% endfor %}
-                                </ul>
-                                <h3>{{ others.title }}</h3>
-
-                                <p>{{ others.time }}</p>
-                                <ul>
-                                    {% for othersItem in others.desc %}
-                                    <li>{{ othersItem | safe }}</li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="picture-ref bottom">
-        <span class="cta">O</span>
-        <p class="text">{{ photoCredit }}, <a href="/">Sanchez Antoine</a></p>
-    </div>
-</div>
-<script type="text/javascript">
-    function age(birthday) { // birthday is a date
-        var ageDifMs = Date.now() - birthday.getTime();
-        var ageDate = new Date(ageDifMs); // miliseconds from epoch
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
+<body>
+<script>
+    const acceptedLang = ['FR', 'EN'];
+    let lang = 'FR';
+    try {
+        if (navigator.languages) {
+            const browserLang = navigator.languages[0];
+            if (browserLang.split('-').length) {
+                const detectedLang = browserLang.split('-')[0].toUpperCase();
+                if (acceptedLang.indexOf(detectedLang) !== -1) {
+                    lang = detectedLang;
+                }
+            }
+        }
+    } catch (e) {
+        // 🤷‍♂️
     }
-
-
-    document.getElementById('age').innerHTML = age(new Date(433501000000));
-
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-65620448-2', 'auto');
-    ga('send', 'pageview');
-
-</script></body>
+    location.assign(`index-${lang}.html`);
+</script>
+</body>
 </html>

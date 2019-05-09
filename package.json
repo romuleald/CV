@@ -7,7 +7,9 @@
     "compress": "uglifycss docs/css/all.css > docs/css/all.min.css",
     "nunjucks": "node tools/nunjucks.js",
     "copy-img": "cp -r ./src/img/ ./docs/img/",
-    "build": "run-s less purge compress && run-p nunjucks copy-img"
+    "copy-index": "cp -r ./src/index.html ./docs/index.html",
+    "build::less": "run-s less purge compress",
+    "build": "run-p build::less nunjucks copy-img copy-index"
   },
   "devDependencies": {
     "less": "^3.9.0",

@@ -2,11 +2,17 @@ const nunjucks = require('nunjucks');
 const fs = require('fs');
 
 const path = `docs/`;
-const ie18nDatas = require('../src/i18n/i18n');
+const i18nDatas = require('../src/i18n/i18n');
 nunjucks.configure('src', {autoescape: false});
+const allLang = Object.keys(i18nDatas);
 
 const writeHTML = (textDatas, lang) => {
-    const HTMLCompiled = nunjucks.render('index.html', textDatas);
+    const contextDatas = {
+        currentLang: lang,
+        allLang: allLang,
+        ...textDatas
+    };
+    const HTMLCompiled = nunjucks.render('index-lang.html', contextDatas);
     const fileName = `index-${lang}.html`;
     fs.writeFile(`${path}${fileName}`, HTMLCompiled, (err) => {
         if (err) throw err;
@@ -14,6 +20,6 @@ const writeHTML = (textDatas, lang) => {
     });
 };
 
-Object.keys(ie18nDatas).forEach((lang) => {
-    writeHTML(ie18nDatas[lang], lang);
+allLang.forEach((lang) => {
+    writeHTML(i18nDatas[lang], lang);
 });

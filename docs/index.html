@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+<script>
+    const acceptedLang = ['FR', 'EN'];
+    let lang = 'FR';
+    try {
+        if (navigator.languages) {
+            const browserLang = navigator.languages[0];
+            if (browserLang.split('-').length) {
+                const detectedLang = browserLang.split('-')[0].toUpperCase();
+                if (acceptedLang.indexOf(detectedLang) !== -1) {
+                    lang = detectedLang;
+                }
+            }
+        }
+    } catch (e) {
+        // 🤷‍♂️
+    }
+    location.assign(`index-${lang}.html`);
+</script>
+</body>
+</html>
